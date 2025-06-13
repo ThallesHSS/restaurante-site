@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Drink</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+
+    .dropdown-button {
+      background-color: black;
+      color: khaki;
+      padding:15px 30px;
+      font-size: 15px;
+      border: solid khaki;
+      cursor: pointer;
+      border-radius: 10px;
+      font-family: candara;
+    }
+
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      z-index: 1;
+      min-width: 90px;
+      border: 1px solid khaki;
+      border-radius: 10px;
+    }
+
+
+    .dropdown-content a {
+      padding: 10px 10px;
+      color: khaki;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #ddd;
+    }
+
+
+    .dropdown-content a:hover {
+      background-color: grey;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+    header {
+      background-color: Black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    section {
+      padding: 20px;
+    }
+
+
+    .item {
+      margin-bottom: 15px;
+    }
+
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+
+     .bt-javas {
+      background-color: black;
+      color: khaki;
+      padding: 10px 15px;
+      border: solid khaki;
+      border-color: khaki;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+
+    .bt-javas:hover {
+      background-color: rgb(66, 64, 64);
+    }
+
+
+    .bt-sobre-nos {
+      padding: 15px 30px;
+      border: solid khaki;
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: black;
+      color: khaki;
+      font-family: candara;
+    }
+
+
+     .bt-sobre-nos:hover {
+      background-color: #333;
+     }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-family: 'TimesNewRoman'; font-size: 50px; color: Khaki;">Restaurante Drink</h1>
+    <div class="dropdown">
+      <button class="dropdown-button">Cardápio</button>
+      <div class="dropdown-content">
+        <a href="#pratoscasa">Pratos da Casa</a>
+        <a href="#japonesa">Comida Japonesa</a>
+        <a href="#drinks">Drinks</a>
+      </div>
+    </div>
+    <button class="bt-sobre-nos">Sobre Nós</button>
+  </header>
+
+
+  <section id="pratoscasa">
+    <h1 style="font-family: 'Candara'; font-size: 50px;"><b>Cardápio</b></h1>
+    <div class="item">
+      <section id="menu">
+    <h2 style="font-size: 25px;">Pratos da Casa</h2>
+    <div class="item">
+      <h4><b>Paillard de filet</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/paillard%20de%20filet.html">Saiba Mais</a>
+      <h5>R$ 49,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Gold arripa mustard</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/Gold arripa mustard.html">Saiba Mais</a>
+      <h5>R$ 47,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Steak tartare</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/Staketartare.html">Saiba Mais</a>
+      <h5>R$ 39,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Filé meu Brasil brasileiro</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/fil%C3%A9%20meu%20brasil%20brasileiro.html">Saiba Mais</a>
+      <h5>R$ 29,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Risoto de cogumelos com ancho</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/risotodecgumeloscomancho.html">Saiba Mais</a>
+      <h5>R$ 49,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>London Peperontino</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/London%20Peperontino.html">Saiba Mais</a>
+      <h5>R$ 19,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Salmão defumado</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/salmaodefumado.html">Saiba Mais</a>
+      <h5>R$ 39,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Abadejo a vilarejo</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/abadejo%20a%20vilarejo.html">Saiba Mais</a>
+      <h5>R$ 39,99</h5>
+    </div>
+    <div class="item">
+      <h4><b>Teppanyaki de anchova negra com camarões</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/Teppanyaki%20de%20anchova%20negra%20com%20camar%CE%A3es.html">Saiba Mais</a>
+      <h5>R$ 40,00</h5>
+    </div>
+    <div class="item">
+      <h4><b>Cordeiro marroquino</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/cordeiro%20marroquino.html">Saiba Mais</a>
+      <h5>R$ 39,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Bife ancho ao aligot de aipim</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Pratos/Bife%20ancho%20ao%20aligot%20de%20aipim.html">Saiba Mais</a>
+      <h5>R$ 59,90</h5>
+    </div>
+  </section>
+
+
+    <hr color="black" align="center" size="2" width="80%">
+      <section id="japonesa">
+    <h2>Comida Japonesa</h2>
+    <div class="item">
+      <div class="item">
+      <h4><b>Sunomono</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/Sunomono.html">Saiba Mais</a>
+      <h5>R$ 19,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Salada Massao</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/SaladaMassao.html">Saiba Mais</a>
+      <h5>R$ 10,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Shimeji na chapa</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/Shimejinachapa.html">Saiba Mais</a>
+      <h5>R$ 25,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Guioza</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/guioza.html">Saiba Mais</a>
+      <h5>R$ 39,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Harumaki</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/Harumaki.html">Saiba Mais</a>
+      <h5>R$ 12,90</h5>
+    </div><div class="item">
+      <h4><b>Hot roll(Self Service)</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/HotRoll.html">Saiba Mais</a>
+      <h5>R$ 5,90</h5>
+    </div><div class="item">
+      <h4><b>Sushi(Self Service)</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/sushi.html">Saiba Mais</a>
+      <h5>R$ 4,90</h5>
+    </div>
+    </div><div class="item">
+      <h4><b>Sashimi(Self Service)</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/sashimi.html">Saiba Mais</a>
+      <h5>R$ 4,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Temaki</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/Temaki.html">Saiba Mais</a>
+      <h5>R$ 10,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Teppan</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Japonesa/teppan.html">Saiba Mais</a>
+      <h5>R$ 14,99</h5>
+    </div>
+  </section>
+
+
+  <hr color="black" align="center" size="2" width="80%">
+      <section id="drinks">
+    <h2>Drinks</h2>
+    <div class="item">
+      <div class="item">
+      <h4><b>Cosmopolitan</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Cosmopolitan.html">Saiba Mais</a>
+      <h5>R$ 12,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Martini</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Martini.html">Saiba Mais</a>
+      <h5>R$ 19,90</h5>
+    </div>
+    <div class="item">
+      <h4><b> Negroni</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Negroni.html">Saiba Mais</a>
+      <h5>R$ 30,90</h5>
+    </div>
+    <div class="item">
+      <h4><b> Piña Colada</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Pi%C3%B1a%20Colada.html">Saiba Mais</a>
+      <h5>R$ 59,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Bloody Mary</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Bloody%20Mary.html">Saiba Mais</a>
+      <h5>R$ 162,90</h5>
+    </div><div class="item">
+      <h4><b>Irish Coffee</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Irish%20Coffee.html">Saiba Mais</a>
+      <h5>R$ 20,90</h5>
+    </div><div class="item">
+      <h4><b>Old Fashioned</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Old%20Fashioned.html">Saiba Mais</a>
+      <h5>R$ 10,90</h5>
+    </div>
+    </div><div class="item">
+      <h4><b>Manhattan</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Manhattan.html">Saiba Mais</a>
+      <h5>R$ 7,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Margarita</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Margarita.html">Saiba Mais</a>
+      <h5>R$ 35,90</h5>
+    </div>
+    <div class="item">
+      <h4><b>Whisky Sour</b></h4>
+      <a href="https://thalleshss.github.io/restaurante-site/Drinks/Whisky%20Sour.html">Saiba Mais</a>
+      <h5>R$ 40,99</h5>
+    </div>
+  </section>
+
+
+  <hr color="black" align="center" size="2" width="80%">
+
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos um restaurante com alta variedade gastronômica, com pratos diversos, dês de culinária brasileira à japonesa.<br>
+    E com uma varidede consideravel de bebidas e drinks.</p>
+  </section>
+
+
+  <hr color="black" align="center" size="2" width="80%">
+
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <button class="bt-javas" onclick="mostrarMensagem()">Clique aqui</button>
+    <p id="mensagem"></p>
+  </section>
+
+
+  <footer style="background-color: black;">
+    <p>&copy; 2025 Restaurante Delícia. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <script>
+    function mostrarMensagem() {
+      const mensagem = document.getElementById("mensagem");
+      mensagem.textContent = "Obrigado por entrar em contato! Em breve responderemos.";
+    }
+  </script>
+</body>
+</html>
