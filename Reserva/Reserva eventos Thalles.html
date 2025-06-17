@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reserva de Eventos</title>
+    </head>
+    <body>
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Candara', sans-serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/1900914-cena-restaurante-turva-com-mesa-vazia-gratis-foto.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .reserva-container {
+                background-color: black;
+                border: 2px solid khaki;
+                border-radius: 15px;
+                padding: 30px;
+                width: 300px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                color: khaki;
+            }
+
+            .reserva-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                padding: 10px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 1px solid khaki;
+            }
+
+            button {
+                padding: 10px;
+                background-color: black;
+                color: khaki;
+                border: 5px solid khaki;
+                border-radius: 8px;
+                font-family: 'Candara', sans-serif;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: gray;
+            }
+
+                .tt h1 {
+                    margin-bottom: 20px;
+                    font-size: 36px;
+                    color: khaki;
+                    text-align: center;
+                    background-color: black;
+                    border: 2px solid khaki;
+                    border-radius: 15px;
+                    padding: 5px;
+                }  
+                
+                .popup {
+                    position: fixed;
+                    top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: black;
+                    color: khaki;
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    box-shadow: 0 0 10px rgba(0 ,0, 0, 0.2);
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 0.5s ease;
+                    z-index: 1000;
+                }
+
+                .popup.mostrar {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+        </style>
+
+        
+
+    <div class="tt">
+            <h1>Faça sua Reserva!</h1>
+        
+
+        <div class="reserva-container">
+            <form>
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data">
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora">
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="tipo">Tipo de Evento</label>
+                <input type="text" name="tipo" id="tipo">
+
+                <label for="quantidade">Quantidade de Pessoas</label>
+                <input type="number" name="qtd" id="qtd">
+
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="mensagem-ss" class="popup">
+        Reserva enviada com Sucesso!
+    </div>
+
+    </body>
+    
+    <script>
+
+        const form = document.querySelector("form");
+        const popup = document.getElementById("mensagem-ss");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+
+
+            popup.classList.add("mostrar");
+
+            setTimeout(() => {
+                popup.classList.remove("mostrar");
+                form.reset();
+            }, 3000);
+        });
+    </script>
